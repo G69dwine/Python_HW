@@ -19,7 +19,7 @@ def binFind(numS, numP):
     left = 1
     right = numS//2 + 1
     while left <= right:
-        middle = (left + right)//2 + 1
+        middle = (left + right)//2
         if numP/middle == numS - middle:
             return middle
         elif middle*(numS - middle) < numP:
