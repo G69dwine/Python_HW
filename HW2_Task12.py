@@ -25,7 +25,6 @@ while left <= right:
     elif middle*(numS - middle) < numP:
         left = middle + 1
     else: right = middle - 1
-
-if x !=0 and y!=0:
+try:
     print(f"Петя загадал числа {x} и {y}")
-else: print("Нет решений")
+except: print("Нет решений")
