@@ -14,17 +14,21 @@
 
 numS = int(input("Сумма загаданных чисел равна "))
 numP = int(input("Произведение загаданных чисел равна "))
-left = 1
-right = numS//2 + 1
-while left <= right:
-    middle = (left + right)//2 + 1
-    if numP/middle == numS - middle:
-        x = middle
-        y = numS - middle
-        break
-    elif middle*(numS - middle) < numP:
-        left = middle + 1
-    else: right = middle - 1
-try:
+
+def binFind(numS, numP):
+    left = 1
+    right = numS//2 + 1
+    while left <= right:
+        middle = (left + right)//2 + 1
+        if numP/middle == numS - middle:
+            return middle
+        elif middle*(numS - middle) < numP:
+            left = middle + 1
+        else: right = middle - 1
+    else: return None
+
+x = binFind(numS, numP)
+if x != None:
+    y = numS - x
     print(f"Петя загадал числа {x} и {y}")
-except: print("Нет решений")
+else: print("Нет решений")
