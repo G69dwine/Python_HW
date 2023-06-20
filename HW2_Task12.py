@@ -4,16 +4,9 @@
 Он задумывает два натуральных числа X и Y (X,Y≤1000), а Катя должна их отгадать. Для этого Петя делает две подсказки. 
 Он называет сумму этих чисел S и их произведение P. Помогите Кате отгадать задуманные Петей числа.
 '''
-# import math
-# numS = int(input("Сумма загаданных чисел равна "))
-# numP = int(input("Произведение загаданных чисел равна "))
-# discriminant = math.pow(numS,2) - 4*numP
-# numX = (numS - math.sqrt(discriminant))/2
-# numY = (numS + math.sqrt(discriminant))/2
-# print(numX, numY)
 
-numS = int(input("Сумма загаданных чисел равна "))
-numP = int(input("Произведение загаданных чисел равна "))
+numberS = int(input("Сумма загаданных чисел равна "))
+numberP = int(input("Произведение загаданных чисел равна "))
 
 def binFind(numS, numP):
     left = 1
@@ -27,8 +20,9 @@ def binFind(numS, numP):
         else: right = middle - 1
     else: return None
 
-x = binFind(numS, numP)
+x = binFind(numberS, numberP)
+
 if x != None:
-    y = numS - x
+    y = numberS - x
     print(f"Петя загадал числа {x} и {y}")
 else: print("Нет решений")
