@@ -12,7 +12,7 @@ if inputNum.isdigit() and len(inputNum) == 6:
     right = 0
     while i < len(inputNum)/2:
         left += int(inputNum[i])
-        right += int(inputNum[len(inputNum) - i -1])
+        right += int(inputNum[len(inputNum) - i - 1])
         i+=1
     if left == right : print("Билет счастливый!")
     else: print("Билет обычный...")
