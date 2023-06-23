@@ -15,10 +15,11 @@ num = int(input("Кол-во элементов массива: "))
 array = [randint(1,100) for i in range(num)]
 print(array)
 numX = int(input("Искомое число: "))
-nearNum = array[0]
 
+nearNum = array[0]
 for i in range(1, len(array)):
-    if abs(numX - array[i]) < abs(num - nearNum):
+    if abs(numX - array[i]) < abs(numX - nearNum):
         nearNum = array[i]
-        
-print(f"{nearNum} - ближайшее к {numX}")
+
+# nearNum = min(array, key=lambda x: abs(x-numX))
+# print(f"{nearNum} - ближайшее к {numX}")
