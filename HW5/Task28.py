@@ -4,11 +4,12 @@
 2 2 -> 4
 '''
 
-a = 15
-b = 5
+a = int(input("Число a: "))
+b = int(input("Число b: "))
 
 def simpleSum(num1, num2):
-    if num2 == 0: return num1
+    if num2 == 0: 
+        return num1
     return 1+simpleSum(num1, num2-1)
 
-print(simpleSum(a,b))
+print(f"{a} + {b} = {simpleSum(a,b)}")
