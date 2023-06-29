@@ -22,3 +22,28 @@ for i in range(len(patch)):
 print(f"Урожай грядки: {patch}")    
 print(f"Варианты сбора модуля: {modPick}")
 print(f"Модуль может собрать {max(modPick)} ягод, зайдя на {modPick.index(max(modPick))+1}-ю грядку")
+
+'''
+Варианты коллег
+'''
+
+# import random
+# n = int(input('Введите колличество кустов: '))
+# garden = [random.randint(1, 6) for i in range(n)]
+
+# max_bushes  = garden[0] + garden[1] + garden[2]
+# indicator = ["|"] * 3 + [" "] * (len(garden) - 3)
+# for i in range (len(garden)):
+#     following_bushes = garden[1] + garden[2] + garden[3]
+#     if following_bushes > max_bushes:
+#         max_bushes = following_bushes
+#         indicator = ["|"] * 3 + [" "] * (len(garden) - 3)
+#     else:
+#         temp = indicator.pop(0)
+#         indicator.append(temp)    
+#     temp = garden.pop(0)
+#     garden.append(temp)
+
+# print(*indicator)
+# print(*garden)
+# print(f"Максимальное число ягод за один заход = {max_bushes}")

@@ -60,3 +60,18 @@ def virusScan(num):
 for ref in refregerators:
     if virusScan(ref):
         print(refregerators.index(ref)+1, end=" ")
+
+'''
+Варианты коллег
+'''
+
+# def Check_Virus(string, virus):
+#     for i in virus:
+#             if i not in string:
+#                 return("Ok")
+#             else:
+#                 string = string[string.index(i):]
+#     return("Virus")    
+          
+# for i in string: 
+#     print(f'{i} - {Check_Virus(string[i], "anton")}')
