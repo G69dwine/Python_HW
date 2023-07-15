@@ -117,7 +117,7 @@ def write_txt(filename: str, data: list):
             file.write(f"{s[:-1]}\n")
 
 
-dir = 'HW8/phonebook.csv'
+dir = 'phonebook.csv'
 phone_book = read_csv(dir)
 fields = ["ID","Фамилия", "Имя", "Телефон", "Описание"]
 
